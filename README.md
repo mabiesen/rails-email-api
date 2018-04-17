@@ -21,20 +21,3 @@ This api accepts the following parameters as a requirement:
 * responsesubject - subject for the client
 
 * Stuff - header argument to be sent, matches password in yaml
-
-
-
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
