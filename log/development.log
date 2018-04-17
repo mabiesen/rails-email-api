@@ -1,0 +1,894 @@
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:10:13 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 112ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:12:43 -0500
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for EmailController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/email_controller.rb:2:in `<class:EmailController>'
+app/controllers/email_controller.rb:1:in `<top (required)>'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:12:58 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+Completed 500 Internal Server Error in 86ms
+
+
+  
+NameError (uninitialized constant EmailController::MyMailer):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:15:09 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant EmailController::Mymailer):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:16:04 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 3.4ms
+Completed 500 Internal Server Error in 144ms
+
+
+  
+ActionView::MissingTemplate (Missing template mymailer_mailer/send_email with "mailer". Searched in:
+  * "mymailer_mailer"
+):
+  
+app/mailers/mymailer_mailer.rb:5:in `send_email'
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:20:09 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 199.6ms
+Sent mail to upandcomming@gmail.com (2973.8ms)
+Date: Mon, 16 Apr 2018 20:20:09 -0500
+From: no-reply@example.com
+To: upandcomming@gmail.com
+Message-ID: <5ad54bc9aa4fc_6daf2ac4b6a915f0597fb@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 3425ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:28:29 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 0.5ms
+Sent mail to upandcomming@gmail.com (2668.7ms)
+Date: Mon, 16 Apr 2018 20:28:29 -0500
+From: no-reply@example.com
+To: upandcomming@gmail.com
+Message-ID: <5ad54dbde0a9c_6daf2ac4b6a91690598a9@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2716ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:29:09 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to upandcomming88@gmail.com (2322.6ms)
+Date: Mon, 16 Apr 2018 20:29:09 -0500
+From: no-reply@example.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad54de512a55_6daf2ac4b6a9155059911@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2372ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:39:50 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 0.5ms
+Sent mail to upandcomming88@gmail.com (2689.3ms)
+Date: Mon, 16 Apr 2018 20:39:50 -0500
+From: no-reply@example.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad550666f732_6daf2ac4b6a9149c60071@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2735ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:41:46 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 0.5ms
+Sent mail to upandcomming88@gmail.com (2447.9ms)
+Date: Mon, 16 Apr 2018 20:41:46 -0500
+From: no-reply@example.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad550dae1e50_6daf2ac4b6a913fc601eb@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2490ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:43:15 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"stuff"=>"things", "email"=>{"stuff"=>"things"}}
+MymailerMailer#send_email: processed outbound mail in 0.5ms
+Sent mail to upandcomming88@gmail.com (2219.5ms)
+Date: Mon, 16 Apr 2018 20:43:15 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5513335981_6daf2ac4b6a915f06027@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2247ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:45:03 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+MymailerMailer#send_email: processed outbound mail in 1.1ms
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NoMethodError (undefined method `email' for #<ActionController::Parameters:0x00007f5a2562a238>):
+  
+app/mailers/mymailer_mailer.rb:6:in `send_email'
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:45:35 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/home/matthew/Scripts/rails/rails_script_repo/project-email-api/app/mailers/mymailer_mailer.rb:6: syntax error, unexpected '(', expecting keyword_end
+    mail to: @details(:email), subject: "password re
+                      ^
+/home/matthew/Scripts/rails/rails_script_repo/project-email-api/app/mailers/mymailer_mailer.rb:6: syntax error, unexpected ',', expecting keyword_end
+l), subject: "password reset", body: "something"
+                              ^):
+  
+app/mailers/mymailer_mailer.rb:6: syntax error, unexpected '(', expecting keyword_end
+app/mailers/mymailer_mailer.rb:6: syntax error, unexpected ',', expecting keyword_end
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:45:46 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/home/matthew/Scripts/rails/rails_script_repo/project-email-api/app/mailers/mymailer_mailer.rb:6: syntax error, unexpected '(', expecting keyword_end
+    mail to: @details(email:), subject: "password re
+                      ^
+/home/matthew/Scripts/rails/rails_script_repo/project-email-api/app/mailers/mymailer_mailer.rb:6: syntax error, unexpected ',', expecting keyword_end
+:), subject: "password reset", body: "something"
+                              ^):
+  
+app/mailers/mymailer_mailer.rb:6: syntax error, unexpected '(', expecting keyword_end
+app/mailers/mymailer_mailer.rb:6: syntax error, unexpected ',', expecting keyword_end
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:46:11 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+MymailerMailer#send_email: processed outbound mail in 3.5ms
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NameError (undefined local variable or method `email' for #<MymailerMailer:0x00007f5a24c77ec0>
+Did you mean?  mail):
+  
+app/mailers/mymailer_mailer.rb:6:in `send_email'
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:46:18 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+MymailerMailer#send_email: processed outbound mail in 2.8ms
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NameError (undefined local variable or method `email' for #<MymailerMailer:0x000055896d9048d0>
+Did you mean?  mail):
+  
+app/mailers/mymailer_mailer.rb:6:in `send_email'
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:47:15 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+MymailerMailer#send_email: processed outbound mail in 1.4ms
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NoMethodError (undefined method `email' for #<ActionController::Parameters:0x00007f5a249d7468>):
+  
+app/mailers/mymailer_mailer.rb:6:in `send_email'
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:49:35 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+MymailerMailer#send_email: processed outbound mail in 0.8ms
+Sent mail to  (1633.9ms)
+Date: Mon, 16 Apr 2018 20:49:35 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad552afacb95_6daf2ac4b6a9155060336@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1641ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:50:06 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"email"=>"upandcomming88@gmail.com"}
+MymailerMailer#send_email: processed outbound mail in 0.8ms
+Sent mail to  (1583.5ms)
+Date: Mon, 16 Apr 2018 20:50:06 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad552cef0385_6daf2ac4b6a9149c60420@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1589ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:50:43 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to  (1602.2ms)
+Date: Mon, 16 Apr 2018 20:50:43 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad552f33448_6daf2ac4b6a913fc605b9@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1604ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:51:18 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to  (1660.6ms)
+Date: Mon, 16 Apr 2018 20:51:18 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad5531676a2c_6daf2ac4b6a915f060644@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1666ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:51:45 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.9ms
+Sent mail to  (1575.9ms)
+Date: Mon, 16 Apr 2018 20:51:45 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad5533115b80_6daf2ac4b6a916906076@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1583ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:52:01 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.7ms
+Sent mail to  (1618.3ms)
+Date: Mon, 16 Apr 2018 20:52:01 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad55341b55a6_6daf2ac4b6a91550608ca@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1624ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:52:16 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/home/matthew/Scripts/rails/rails_script_repo/project-email-api/app/mailers/mymailer_mailer.rb:6: syntax error, unexpected '(', expecting keyword_end
+    puts @details(email:)
+                  ^):
+  
+app/mailers/mymailer_mailer.rb:6: syntax error, unexpected '(', expecting keyword_end
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:52:31 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to  (2672.1ms)
+Date: Mon, 16 Apr 2018 20:52:31 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad5535fd1df0_6daf2ac4b6a913fc60915@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 2677ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:52:48 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.7ms
+Sent mail to  (1666.1ms)
+Date: Mon, 16 Apr 2018 20:52:48 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad5537064fa8_6daf2ac4b6a915f06105e@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1671ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:53:10 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mail"=>"upandcomming88@gmail.com", "email"=>{"mail"=>"upandcomming88@gmail.com"}}
+MymailerMailer#send_email: processed outbound mail in 0.8ms
+Sent mail to upandcomming88@gmail.com (2725.1ms)
+Date: Mon, 16 Apr 2018 20:53:10 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad55386c1211_6daf2ac4b6a9169061135@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2749ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:54:30 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"to"=>"upandcomming88@gmail.com", "subject"=>"this is a subject", "body"=>"this is a body", "email"=>{"to"=>"upandcomming88@gmail.com", "subject"=>"this is a subject", "body"=>"this is a body"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to  (1592.0ms)
+Date: Mon, 16 Apr 2018 20:54:30 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad553d69f989_6daf2ac4b6a915506122@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 1594ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:55:32 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"to"=>"upandcomming88@gmail.com", "subject"=>"this is a subject", "body"=>"this is a body", "email"=>{"to"=>"upandcomming88@gmail.com", "subject"=>"this is a subject", "body"=>"this is a body"}}
+MymailerMailer#send_email: processed outbound mail in 0.5ms
+Sent mail to  (2589.1ms)
+Date: Mon, 16 Apr 2018 20:55:32 -0500
+From: upandcomming88@gmail.com
+Message-ID: <5ad5541451f7b_6daf2ac4b6a9149c6136b@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+Completed 500 Internal Server Error in 2591ms
+
+
+  
+ArgumentError (SMTP To address may not be blank: []):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:56:15 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "subject"=>"this is a subject", "body"=>"this is a body", "email"=>{"mailto"=>"upandcomming88@gmail.com", "subject"=>"this is a subject", "body"=>"this is a body"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to upandcomming88@gmail.com (2302.3ms)
+Date: Mon, 16 Apr 2018 20:56:15 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5543fb508e_6daf2ac4b6a913fc61418@matthew-K501UX.mail>
+Subject: password reset
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+something
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2326ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:57:42 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "email"=>{"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body"}}
+MymailerMailer#send_email: processed outbound mail in 0.7ms
+Sent mail to upandcomming88@gmail.com (2320.8ms)
+Date: Mon, 16 Apr 2018 20:57:42 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5549656d61_6daf2ac4b6a915f061568@matthew-K501UX.mail>
+Subject: this is a subject
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+this is a body
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2371ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:58:24 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "email"=>{"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body"}}
+MymailerMailer#send_email: processed outbound mail in 0.8ms
+Sent mail to upandcomming88@gmail.com (2431.3ms)
+Date: Mon, 16 Apr 2018 20:58:24 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad554c069459_6daf2ac4b6a916906163e@matthew-K501UX.mail>
+Subject: this is a subject
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+this is a body
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2473ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 20:59:24 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebody", "email"=>{"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebody"}}
+MymailerMailer#send_email: processed outbound mail in 0.6ms
+Sent mail to upandcomming88@gmail.com (2697.4ms)
+Date: Mon, 16 Apr 2018 20:59:24 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad554fc4366b_6daf2ac4b6a915506179e@matthew-K501UX.mail>
+Subject: this is a subject
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from somebody
+this is a body
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2739ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:02:41 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebody", "email"=>{"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebody"}}
+MymailerMailer#send_email: processed outbound mail in 0.9ms
+Sent mail to upandcomming88@gmail.com (2707.1ms)
+Date: Mon, 16 Apr 2018 21:02:41 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad555c190689_6daf2ac4b6a9149c61812@matthew-K501UX.mail>
+Subject: this is a subject
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from somebody
+
+this is a body
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2731ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:03:20 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebody"}
+MymailerMailer#send_email: processed outbound mail in 0.8ms
+Completed 500 Internal Server Error in 223ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/mailers/mymailer_mailer.rb:9:in `send_email'
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:03:55 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebody"}
+MymailerMailer#send_email: processed outbound mail in 203.6ms
+Sent mail to upandcomming88@gmail.com (2417.1ms)
+Date: Mon, 16 Apr 2018 21:03:56 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5560c72fb_73892b1ea3f3466021648@matthew-K501UX.mail>
+Subject: this is a subject
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+this is a body
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2645ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:04:33 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"mailto"=>"upandcomming88@gmail.com", "mailsubject"=>"this is a subject", "mailbody"=>"this is a body", "mailfrom"=>"somebodyelse"}
+MymailerMailer#send_email: processed outbound mail in 1.6ms
+Sent mail to upandcomming88@gmail.com (2306.5ms)
+Date: Mon, 16 Apr 2018 21:04:33 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad55631c7cc2_73892b1ea3f2fe08217d4@matthew-K501UX.mail>
+Subject: this is a subject
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebodyelse
+
+this is a body
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2350ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:42:09 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+MymailerMailer#send_email: processed outbound mail in 182.2ms
+Sent mail to upandcomming88@gmail.com (2920.5ms)
+Date: Mon, 16 Apr 2018 21:42:09 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad55f015cbfc_77812b0b3a837a0038639@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 3357ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:44:33 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NoMethodError (undefined method `send_email' for MymailerMailer:Class):
+  
+app/controllers/email_controller.rb:5:in `sendstuff'
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:44:48 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+MymailerMailer#send_email: processed outbound mail in 1.1ms
+Sent mail to upandcomming88@gmail.com (2398.3ms)
+Date: Mon, 16 Apr 2018 21:44:48 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad55fa0e3552_77812b0b3a837744387ab@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 2421ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:51:58 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+MymailerMailer#email_to_client: processed outbound mail in 0.7ms
+Sent mail to upandcomming88@gmail.com (2558.0ms)
+Date: Mon, 16 Apr 2018 21:51:58 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5614e85ab8_77812b0b3a8378e83889b@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+MymailerMailer#email_to_vendor: processed outbound mail in 2.3ms
+Sent mail to upandcomming88@gmail.com (2247.5ms)
+Date: Mon, 16 Apr 2018 21:52:01 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad561511b427_77812b0b3a8378e838929@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 4852ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 21:54:00 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+MymailerMailer#email_to_client: processed outbound mail in 181.8ms
+Sent mail to upandcomming88@gmail.com (2414.2ms)
+Date: Mon, 16 Apr 2018 21:54:01 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad561c927b2c_79382b233416eba8858e9@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+MymailerMailer#email_to_vendor: processed outbound mail in 2.3ms
+Sent mail to upandcomming88@gmail.com (2250.1ms)
+Date: Mon, 16 Apr 2018 21:54:03 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad561cb8da4e_79382b233416eba8859a4@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 5101ms
+
+
+Started POST "/email" for 127.0.0.1 at 2018-04-16 22:00:45 -0500
+Processing by EmailController#sendstuff as JSON
+  Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+MymailerMailer#email_to_client: processed outbound mail in 134.8ms
+Sent mail to upandcomming88@gmail.com (2325.1ms)
+Date: Mon, 16 Apr 2018 22:00:45 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5635d9a387_7a8b2b28f83d4dc4186eb@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+MymailerMailer#email_to_vendor: processed outbound mail in 2.6ms
+Sent mail to upandcomming88@gmail.com (2350.5ms)
+Date: Mon, 16 Apr 2018 22:00:47 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5635feac59_7a8b2b28f83d4dc418793@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+No template found for EmailController#sendstuff, rendering head :no_content
+Completed 204 No Content in 5088ms
+
+

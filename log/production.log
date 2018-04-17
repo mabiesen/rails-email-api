@@ -1,0 +1,430 @@
+I, [2018-04-16T21:59:52.259583 #31301]  INFO -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] Started POST "/email" for 127.0.0.1 at 2018-04-16 21:59:52 -0500
+I, [2018-04-16T21:59:52.261862 #31301]  INFO -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T21:59:52.261922 #31301]  INFO -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T21:59:52.427524 #31301] DEBUG -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] MymailerMailer#email_to_client: processed outbound mail in 159.7ms
+I, [2018-04-16T21:59:53.935603 #31301]  INFO -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1507.8ms)
+D, [2018-04-16T21:59:53.935904 #31301] DEBUG -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] Date: Mon, 16 Apr 2018 21:59:52 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad5632868bc6_7a452adb0aa9ffb4974ef@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T21:59:53.936577 #31301]  INFO -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] Completed 500 Internal Server Error in 1674ms
+F, [2018-04-16T21:59:53.938930 #31301] FATAL -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26]   
+F, [2018-04-16T21:59:53.939143 #31301] FATAL -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T21:59:53.939295 #31301] FATAL -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26]   
+F, [2018-04-16T21:59:53.939417 #31301] FATAL -- : [44a47617-0ab3-46c6-8550-23dc27c0ba26] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:00:07.244974 #31301]  INFO -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:00:07 -0500
+I, [2018-04-16T22:00:07.245550 #31301]  INFO -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:00:07.245596 #31301]  INFO -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:00:07.246342 #31301] DEBUG -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] MymailerMailer#email_to_client: processed outbound mail in 0.4ms
+I, [2018-04-16T22:00:08.660451 #31301]  INFO -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1413.9ms)
+D, [2018-04-16T22:00:08.660710 #31301] DEBUG -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] Date: Mon, 16 Apr 2018 22:00:07 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad563373c436_7a452adb0aa9fcf897561@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T22:00:08.661137 #31301]  INFO -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] Completed 500 Internal Server Error in 1415ms
+F, [2018-04-16T22:00:08.663328 #31301] FATAL -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e]   
+F, [2018-04-16T22:00:08.663483 #31301] FATAL -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T22:00:08.663588 #31301] FATAL -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e]   
+F, [2018-04-16T22:00:08.663691 #31301] FATAL -- : [a3d26dca-af9a-4109-ae40-8ded8076e25e] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:04:14.735038 #31605]  INFO -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:04:14 -0500
+I, [2018-04-16T22:04:14.736211 #31605]  INFO -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:04:14.736261 #31605]  INFO -- : [0872834a-bff3-4de9-b982-7bd05774f3e8]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:04:14.892437 #31605] DEBUG -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] MymailerMailer#email_to_client: processed outbound mail in 150.3ms
+I, [2018-04-16T22:04:16.419662 #31605]  INFO -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1526.9ms)
+D, [2018-04-16T22:04:16.419931 #31605] DEBUG -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] Date: Mon, 16 Apr 2018 22:04:14 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad5642eda3ec_7b752abbebdede203623d@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T22:04:16.420546 #31605]  INFO -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] Completed 500 Internal Server Error in 1684ms
+F, [2018-04-16T22:04:16.423161 #31605] FATAL -- : [0872834a-bff3-4de9-b982-7bd05774f3e8]   
+F, [2018-04-16T22:04:16.423404 #31605] FATAL -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T22:04:16.423531 #31605] FATAL -- : [0872834a-bff3-4de9-b982-7bd05774f3e8]   
+F, [2018-04-16T22:04:16.423645 #31605] FATAL -- : [0872834a-bff3-4de9-b982-7bd05774f3e8] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:06:29.117619 #31605]  INFO -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:06:29 -0500
+I, [2018-04-16T22:06:29.118225 #31605]  INFO -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:06:29.118278 #31605]  INFO -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:06:29.119008 #31605] DEBUG -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] MymailerMailer#email_to_client: processed outbound mail in 0.4ms
+I, [2018-04-16T22:06:30.629141 #31605]  INFO -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1509.9ms)
+D, [2018-04-16T22:06:30.629414 #31605] DEBUG -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] Date: Mon, 16 Apr 2018 22:06:29 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad564b51d2cd_7b752abbebdedd943632f@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T22:06:30.629927 #31605]  INFO -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] Completed 500 Internal Server Error in 1511ms
+F, [2018-04-16T22:06:30.632094 #31605] FATAL -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c]   
+F, [2018-04-16T22:06:30.632251 #31605] FATAL -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T22:06:30.632378 #31605] FATAL -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c]   
+F, [2018-04-16T22:06:30.632476 #31605] FATAL -- : [6ed01d28-0a4a-49d4-9f73-705fd450985c] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:13:24.642728 #31605]  INFO -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:13:24 -0500
+I, [2018-04-16T22:13:24.643352 #31605]  INFO -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:13:24.643428 #31605]  INFO -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:13:24.644237 #31605] DEBUG -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] MymailerMailer#email_to_client: processed outbound mail in 0.4ms
+I, [2018-04-16T22:13:26.080865 #31605]  INFO -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1436.4ms)
+D, [2018-04-16T22:13:26.081314 #31605] DEBUG -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] Date: Mon, 16 Apr 2018 22:13:24 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad566549d6ac_7b752abbebdedcf436499@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T22:13:26.081990 #31605]  INFO -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] Completed 500 Internal Server Error in 1438ms
+F, [2018-04-16T22:13:26.086163 #31605] FATAL -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7]   
+F, [2018-04-16T22:13:26.088773 #31605] FATAL -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T22:13:26.089438 #31605] FATAL -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7]   
+F, [2018-04-16T22:13:26.090760 #31605] FATAL -- : [abef8a4a-2c25-46ce-be64-dbc3e83488c7] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:15:52.993547 #31605]  INFO -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:15:52 -0500
+I, [2018-04-16T22:15:52.994141 #31605]  INFO -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:15:52.994214 #31605]  INFO -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:15:52.994986 #31605] DEBUG -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] MymailerMailer#email_to_client: processed outbound mail in 0.4ms
+I, [2018-04-16T22:15:54.469316 #31605]  INFO -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1474.1ms)
+D, [2018-04-16T22:15:54.469608 #31605] DEBUG -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] Date: Mon, 16 Apr 2018 22:15:52 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad566e8f30ad_7b752abbebdedc4036564@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T22:15:54.470304 #31605]  INFO -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] Completed 500 Internal Server Error in 1476ms
+F, [2018-04-16T22:15:54.473944 #31605] FATAL -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63]   
+F, [2018-04-16T22:15:54.474207 #31605] FATAL -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T22:15:54.474603 #31605] FATAL -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63]   
+F, [2018-04-16T22:15:54.474892 #31605] FATAL -- : [78664e76-a75e-41b3-97b3-e7bfe7b68c63] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:16:07.067119 #31605]  INFO -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:16:07 -0500
+I, [2018-04-16T22:16:07.067799 #31605]  INFO -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:16:07.067864 #31605]  INFO -- : [b6a93970-8887-4a01-b701-923c1ee5c29f]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:16:07.068632 #31605] DEBUG -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] MymailerMailer#email_to_client: processed outbound mail in 0.4ms
+I, [2018-04-16T22:16:08.572521 #31605]  INFO -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] Sent mail to <%= ENV["SECRET_EMAIL_ADDRESS"] %> (1503.6ms)
+D, [2018-04-16T22:16:08.572839 #31605] DEBUG -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] Date: Mon, 16 Apr 2018 22:16:07 -0500
+From: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+To: <%= ENV["SECRET_EMAIL_ADDRESS"] %>
+Message-ID: <5ad566f710e32_7b752abbebdedeac366e3@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+I, [2018-04-16T22:16:08.573536 #31605]  INFO -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] Completed 500 Internal Server Error in 1505ms
+F, [2018-04-16T22:16:08.575981 #31605] FATAL -- : [b6a93970-8887-4a01-b701-923c1ee5c29f]   
+F, [2018-04-16T22:16:08.576193 #31605] FATAL -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] Net::SMTPAuthenticationError (535-5.7.8 Username and Password not accepted. Learn more at
+):
+F, [2018-04-16T22:16:08.576438 #31605] FATAL -- : [b6a93970-8887-4a01-b701-923c1ee5c29f]   
+F, [2018-04-16T22:16:08.576652 #31605] FATAL -- : [b6a93970-8887-4a01-b701-923c1ee5c29f] app/controllers/email_controller.rb:6:in `sendstuff'
+I, [2018-04-16T22:16:31.953821 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:16:31 -0500
+I, [2018-04-16T22:16:31.955099 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:16:31.955192 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:16:32.154655 #32115] DEBUG -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] MymailerMailer#email_to_client: processed outbound mail in 193.2ms
+I, [2018-04-16T22:16:34.665507 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Sent mail to upandcomming88@gmail.com (2510.4ms)
+D, [2018-04-16T22:16:34.665897 #32115] DEBUG -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Date: Mon, 16 Apr 2018 22:16:32 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad567102666d_7d732af43ba10248113cd@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+D, [2018-04-16T22:16:34.669119 #32115] DEBUG -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] MymailerMailer#email_to_vendor: processed outbound mail in 2.0ms
+I, [2018-04-16T22:16:37.003189 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Sent mail to upandcomming88@gmail.com (2333.5ms)
+D, [2018-04-16T22:16:37.003552 #32115] DEBUG -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Date: Mon, 16 Apr 2018 22:16:34 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad56712a3ce7_7d732af43ba1024811474@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+I, [2018-04-16T22:16:37.048658 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T22:16:37.049029 #32115]  INFO -- : [d43f1d80-97a8-42d2-b672-9eb398e42ac3] Completed 204 No Content in 5094ms
+I, [2018-04-16T22:21:55.329336 #32304]  INFO -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:21:55 -0500
+I, [2018-04-16T22:21:55.330727 #32304]  INFO -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:21:55.330822 #32304]  INFO -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+W, [2018-04-16T22:21:55.336501 #32304]  WARN -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4] Can't verify CSRF token authenticity.
+I, [2018-04-16T22:21:55.336851 #32304]  INFO -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4] Completed 422 Unprocessable Entity in 6ms
+F, [2018-04-16T22:21:55.337765 #32304] FATAL -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4]   
+F, [2018-04-16T22:21:55.337838 #32304] FATAL -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4] ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+F, [2018-04-16T22:21:55.337884 #32304] FATAL -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4]   
+F, [2018-04-16T22:21:55.337952 #32304] FATAL -- : [30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/etag.rb:25:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/head.rb:12:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] railties (5.1.6) lib/rails/engine.rb:522:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+[30f44185-c84c-4b37-9f19-a8e4e8afbcf4] puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-16T22:56:54.959375 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Started POST "/email" for 127.0.0.1 at 2018-04-16 22:56:54 -0500
+I, [2018-04-16T22:56:54.961369 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T22:56:54.961445 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T22:56:55.131167 #560] DEBUG -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] MymailerMailer#email_to_client: processed outbound mail in 163.1ms
+I, [2018-04-16T22:56:57.961564 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Sent mail to upandcomming88@gmail.com (2830.0ms)
+D, [2018-04-16T22:56:57.962159 #560] DEBUG -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Date: Mon, 16 Apr 2018 22:56:55 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad57087209ca_2302aef464d2b1857440@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+D, [2018-04-16T22:56:57.965875 #560] DEBUG -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] MymailerMailer#email_to_vendor: processed outbound mail in 2.5ms
+I, [2018-04-16T22:57:00.339348 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Sent mail to upandcomming88@gmail.com (2373.2ms)
+D, [2018-04-16T22:57:00.339751 #560] DEBUG -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Date: Mon, 16 Apr 2018 22:56:57 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad57089ec0c4_2302aef464d2b18575a3@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+I, [2018-04-16T22:57:00.384399 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T22:57:00.384757 #560]  INFO -- : [ce5f8265-14aa-488a-976e-4b6cbc71ca91] Completed 204 No Content in 5423ms
+I, [2018-04-16T23:00:38.427838 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Started POST "/email" for 127.0.0.1 at 2018-04-16 23:00:38 -0500
+I, [2018-04-16T23:00:38.429225 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T23:00:38.429296 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T23:00:38.614697 #752] DEBUG -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] MymailerMailer#email_to_client: processed outbound mail in 179.1ms
+I, [2018-04-16T23:00:40.991206 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Sent mail to upandcomming88@gmail.com (2376.0ms)
+D, [2018-04-16T23:00:40.991615 #752] DEBUG -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Date: Mon, 16 Apr 2018 23:00:38 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5716696a4a_2f02ad95468c63c68537@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+D, [2018-04-16T23:00:40.994429 #752] DEBUG -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] MymailerMailer#email_to_vendor: processed outbound mail in 1.8ms
+I, [2018-04-16T23:00:43.291673 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Sent mail to upandcomming88@gmail.com (2296.8ms)
+D, [2018-04-16T23:00:43.291996 #752] DEBUG -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Date: Mon, 16 Apr 2018 23:00:40 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad57168f351f_2f02ad95468c63c686c6@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+I, [2018-04-16T23:00:43.335000 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T23:00:43.335316 #752]  INFO -- : [ce69f53c-2f66-478d-9cae-d2c132e70702] Completed 204 No Content in 4906ms
+I, [2018-04-16T23:00:52.914986 #752]  INFO -- : [6ed5d3d8-4a30-4f2c-bf37-480f7c34ca43] Started POST "/email" for 127.0.0.1 at 2018-04-16 23:00:52 -0500
+I, [2018-04-16T23:00:52.915758 #752]  INFO -- : [6ed5d3d8-4a30-4f2c-bf37-480f7c34ca43] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T23:00:52.915829 #752]  INFO -- : [6ed5d3d8-4a30-4f2c-bf37-480f7c34ca43]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+I, [2018-04-16T23:00:52.916150 #752]  INFO -- : [6ed5d3d8-4a30-4f2c-bf37-480f7c34ca43] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T23:00:52.916291 #752]  INFO -- : [6ed5d3d8-4a30-4f2c-bf37-480f7c34ca43] Completed 204 No Content in 0ms
+I, [2018-04-16T23:01:17.959222 #752]  INFO -- : [455167cb-5dd3-48ca-ae10-ae2462071d8a] Started POST "/email" for 127.0.0.1 at 2018-04-16 23:01:17 -0500
+I, [2018-04-16T23:01:17.959977 #752]  INFO -- : [455167cb-5dd3-48ca-ae10-ae2462071d8a] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T23:01:17.960044 #752]  INFO -- : [455167cb-5dd3-48ca-ae10-ae2462071d8a]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+I, [2018-04-16T23:01:17.960344 #752]  INFO -- : [455167cb-5dd3-48ca-ae10-ae2462071d8a] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T23:01:17.960481 #752]  INFO -- : [455167cb-5dd3-48ca-ae10-ae2462071d8a] Completed 204 No Content in 0ms
+I, [2018-04-16T23:03:21.656767 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Started POST "/email" for 127.0.0.1 at 2018-04-16 23:03:21 -0500
+I, [2018-04-16T23:03:21.658598 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T23:03:21.658677 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T23:03:21.828320 #901] DEBUG -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] MymailerMailer#email_to_client: processed outbound mail in 163.2ms
+I, [2018-04-16T23:03:24.424867 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Sent mail to upandcomming88@gmail.com (2596.1ms)
+D, [2018-04-16T23:03:24.425270 #901] DEBUG -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Date: Mon, 16 Apr 2018 23:03:21 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad57209cada8_3852b28c83361682652f@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+D, [2018-04-16T23:03:24.429683 #901] DEBUG -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] MymailerMailer#email_to_vendor: processed outbound mail in 2.9ms
+I, [2018-04-16T23:03:26.777660 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Sent mail to upandcomming88@gmail.com (2347.4ms)
+D, [2018-04-16T23:03:26.778023 #901] DEBUG -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Date: Mon, 16 Apr 2018 23:03:24 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad5720c69d35_3852b28c833616826633@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+I, [2018-04-16T23:03:26.795989 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T23:03:26.796270 #901]  INFO -- : [f389be2a-f985-4bf1-bed3-12b59e7b9d00] Completed 204 No Content in 5137ms
+I, [2018-04-16T23:13:53.752477 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Started POST "/email" for 127.0.0.1 at 2018-04-16 23:13:53 -0500
+I, [2018-04-16T23:13:53.753964 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T23:13:53.754035 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T23:13:53.963271 #1299] DEBUG -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] MymailerMailer#email_to_client: processed outbound mail in 208.6ms
+I, [2018-04-16T23:13:56.336018 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Sent mail to upandcomming88@gmail.com (2372.5ms)
+D, [2018-04-16T23:13:56.336368 #1299] DEBUG -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Date: Mon, 16 Apr 2018 23:13:53 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad57481ebb60_5132af485bf8b608369e@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+D, [2018-04-16T23:13:56.338471 #1299] DEBUG -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] MymailerMailer#email_to_vendor: processed outbound mail in 1.3ms
+I, [2018-04-16T23:13:58.690591 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Sent mail to upandcomming88@gmail.com (2351.7ms)
+D, [2018-04-16T23:13:58.690938 #1299] DEBUG -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Date: Mon, 16 Apr 2018 23:13:56 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad57484533dc_5132af485bf8b6083744@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+email from: somebody
+
+clientbody
+I, [2018-04-16T23:13:58.708210 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T23:13:58.708556 #1299]  INFO -- : [0bd12448-3113-45f4-b1f6-0e74ac2a1994] Completed 204 No Content in 4954ms
+I, [2018-04-16T23:19:09.068981 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Started POST "/email" for 127.0.0.1 at 2018-04-16 23:19:09 -0500
+I, [2018-04-16T23:19:09.070383 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Processing by EmailController#sendstuff as JSON
+I, [2018-04-16T23:19:09.070459 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d]   Parameters: {"from"=>"somebody", "responsesubject"=>"thankyou!", "responsebody"=>"somestuff", "tosubject"=>"yougotmail!", "tobody"=>"clientbody"}
+D, [2018-04-16T23:19:09.258263 #1636] DEBUG -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] MymailerMailer#email_to_client: processed outbound mail in 187.1ms
+I, [2018-04-16T23:19:11.627735 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Sent mail to upandcomming88@gmail.com (2369.1ms)
+D, [2018-04-16T23:19:11.628113 #1636] DEBUG -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Date: Mon, 16 Apr 2018 23:19:09 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad575bd3f98d_6642afef0cc656849897@matthew-K501UX.mail>
+Subject: thankyou!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+somestuff
+D, [2018-04-16T23:19:11.631245 #1636] DEBUG -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] MymailerMailer#email_to_vendor: processed outbound mail in 2.0ms
+I, [2018-04-16T23:19:13.983523 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Sent mail to upandcomming88@gmail.com (2351.8ms)
+D, [2018-04-16T23:19:13.983836 #1636] DEBUG -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Date: Mon, 16 Apr 2018 23:19:11 -0500
+From: upandcomming88@gmail.com
+To: upandcomming88@gmail.com
+Message-ID: <5ad575bf9a707_6642afef0cc656849962@matthew-K501UX.mail>
+Subject: yougotmail!
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+CLIENT ADDRESS: somebody
+
+ CLIENT MESSAGE: clientbody
+I, [2018-04-16T23:19:13.999016 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] No template found for EmailController#sendstuff, rendering head :no_content
+I, [2018-04-16T23:19:13.999275 #1636]  INFO -- : [df4f7217-42d7-4006-97ce-3061b006ee1d] Completed 204 No Content in 4929ms
